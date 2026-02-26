@@ -1,0 +1,15 @@
+We would normally want to create a virtual environment to run our Python code.
+This allows us to run Python code and install dependencies for a specific project.
+This means that, if we update packages but we running other versions of the package
+in other projects, we won't run into errors due to version incompatibility.
+
+To create a virtual environment:
+    1. Make sure to be in your working root folder
+    2. Run the command python3 -m venv venv to create the vinv folder
+    3. Run the command source venv/bin/activate to activate the virtual environment
+
+Here are the scripts we need to run in order to create a scrapy project:
+
+    1. scrapy startproject name_of_project → This is the first one we run to start a project with its boilerplate code
+    2. scrapy genspider name_of_spider website_to_scrape → We MUST run this command in the spiders folder 
+    to create a spider.
