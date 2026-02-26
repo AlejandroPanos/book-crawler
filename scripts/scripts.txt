@@ -13,3 +13,14 @@ Here are the scripts we need to run in order to create a scrapy project:
     1. scrapy startproject name_of_project → This is the first one we run to start a project with its boilerplate code
     2. scrapy genspider name_of_spider website_to_scrape → We MUST run this command in the spiders folder 
     to create a spider.
+
+The pages that we scrape, will look at different things from us:
+    1. The user agent
+    2. Cookies
+    3. Sessions
+    4. Headers
+    5. IP Address
+
+For websites that are not too complex, we can just change the User Agent and it will probably be fine. However, 
+for more complex webpages, they will look at everything in the request headers and they will want everything to be
+different or slightly different.
